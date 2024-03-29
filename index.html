@@ -103,17 +103,12 @@
     <!-- JavaScript код для установки PWA -->
     <script>
         let deferredPrompt;
-        let isEventHandled = false;
 
         window.addEventListener('beforeinstallprompt', (e) => {
             console.log('Событие beforeinstallprompt обнаружено');
             e.preventDefault();
             deferredPrompt = e;
-
-            if (!isEventHandled) {
-                showInstallButton();
-                isEventHandled = true;
-            }
+            showInstallButton();
         });
 
         function showInstallButton() {
@@ -140,6 +135,12 @@
         document.querySelector('.close').onclick = function () {
             document.getElementById('pwaModal').style.display = 'none';
         };
+
+        // Показать модальное окно при начальной загрузке страницы
+        if (window.matchMedia('(display-mode: browser)').matches && /Android/i.test(navigator.userAgent)) {
+            showInstallButton();
+        }
+
 
     </script>
 </body>
