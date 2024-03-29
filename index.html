@@ -91,23 +91,24 @@
         </div>
     </div>
 
+
+
     <!-- Модальное окно для установки PWA -->
     <div id="pwaModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Добавьте приложение на главный экран</p>
-            <button id="installPWAButton">Добавить</button>
+            <p>Установите PWA на вашем устройстве</p>
+            <button id="installPWAButton">Установить</button>
         </div>
     </div>
 
-    <!-- JavaScript код для установки PWA -->
     <script>
         let deferredPrompt;
 
-        window.addEventListener('beforeinstallprompt', (e) => {
-            console.log('Событие beforeinstallprompt обнаружено');
-            e.preventDefault();
-            deferredPrompt = e;
+        window.addEventListener('beforeinstallprompt', (event) => {
+            console.log('Received beforeinstallprompt event', event);
+            event.preventDefault();
+            deferredPrompt = event;
             showInstallButton();
         });
 
@@ -121,12 +122,15 @@
                     deferredPrompt.userChoice
                         .then((choiceResult) => {
                             if (choiceResult.outcome === 'accepted') {
-                                console.log('Пользователь согласился установить PWA');
+                                console.log('User accepted the PWA installation');
                             } else {
-                                console.log('Пользователь отклонил установку PWA');
+                                console.log('User declined the PWA installation');
                             }
                             deferredPrompt = null;
                             modal.style.display = 'none';
+                        })
+                        .catch((error) => {
+                            console.error('Error during PWA installation:', error);
                         });
                 }
             };
@@ -136,12 +140,24 @@
             document.getElementById('pwaModal').style.display = 'none';
         };
 
-        // Показать модальное окно при начальной загрузке страницы
-        if (window.matchMedia('(display-mode: browser)').matches && /Android/i.test(navigator.userAgent)) {
-            showInstallButton();
+        // Обработчик события для отправки команды установки PWA в сервис-воркер
+        document.getElementById('installPWAButton').onclick = function () {
+            if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+                navigator.serviceWorker.controller.postMessage('installPWA');
+            }
+        };
+    </script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw-worker.js')
+                .then(reg => {
+                    console.log('Service Worker registered');
+                })
+                .catch(error => {
+                    console.error('Error registering Service Worker:', error);
+                });
         }
-
-
     </script>
 </body>
 
