@@ -106,7 +106,7 @@
         let isEventHandled = false;
 
         window.addEventListener('beforeinstallprompt', (e) => {
-            console.log('Показывается событие beforeinstallprompt');
+            console.log('Событие beforeinstallprompt обнаружено');
             e.preventDefault();
             deferredPrompt = e;
 
@@ -140,6 +140,7 @@
         document.querySelector('.close').onclick = function () {
             document.getElementById('pwaModal').style.display = 'none';
         };
+
     </script>
 </body>
 
