@@ -138,3 +138,8 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
+
+.modal-content img {
+	width: 100%;
+	height: auto;
+}
