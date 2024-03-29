@@ -22,7 +22,15 @@ workbox.core.clientsClaim();
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "1fdd24d4983850493a759d5f6dcc30ed"
+    "revision": "3fe5c662465d06e5dd0f2938f06e5c50"
+  },
+  {
+    "url": "main.js",
+    "revision": "2676aa2c3d7a9eb04f238bf700c3c7d3"
+  },
+  {
+    "url": "pwacompat.min.js",
+    "revision": "038770ef3eb91f3e8a50a3916cb7cf28"
   },
   {
     "url": "manifest.json",
@@ -35,14 +43,6 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "assets/js/jquery-3.6.0.min.js",
     "revision": "0732e3eabbf8aa7ce7f69eedbd07dfdd"
-  },
-  {
-    "url": "assets/js/main.js",
-    "revision": "2676aa2c3d7a9eb04f238bf700c3c7d3"
-  },
-  {
-    "url": "assets/js/pwacompat.min.js",
-    "revision": "038770ef3eb91f3e8a50a3916cb7cf28"
   },
   {
     "url": "assets/icons/icon-128x128.png",
