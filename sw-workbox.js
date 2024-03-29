@@ -22,15 +22,11 @@ workbox.core.clientsClaim();
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "3fe5c662465d06e5dd0f2938f06e5c50"
+    "revision": "5e1d56008d1c98bfe900712092292a70"
   },
   {
     "url": "main.js",
     "revision": "2676aa2c3d7a9eb04f238bf700c3c7d3"
-  },
-  {
-    "url": "pwacompat.min.js",
-    "revision": "038770ef3eb91f3e8a50a3916cb7cf28"
   },
   {
     "url": "manifest.json",
@@ -38,11 +34,15 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "assets/css/style.css",
-    "revision": "2785ec63aca5cf7559f385253108577c"
+    "revision": "e6919dfb16efe169e000e9078d5125ab"
   },
   {
-    "url": "assets/js/jquery-3.6.0.min.js",
+    "url": "js/jquery-3.6.0.min.js",
     "revision": "0732e3eabbf8aa7ce7f69eedbd07dfdd"
+  },
+  {
+    "url": "js/pwacompat.min.js",
+    "revision": "038770ef3eb91f3e8a50a3916cb7cf28"
   },
   {
     "url": "assets/icons/icon-128x128.png",
@@ -87,10 +87,6 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "assets/img/bg-2",
     "revision": "f0a344396802b51eac58df781f683a0a"
-  },
-  {
-    "url": "assets/img/screen.png",
-    "revision": "21909f0bd0f04a0c9873d2abe38a82db"
   },
   {
     "url": "assets/pages/1",
