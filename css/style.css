@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -44,6 +45,14 @@ body {
 .main_container img {
   width: 100vw;
   height: auto;
+  -webkit-touch-callout: none;
+  /* Отключает вызов контекстного меню при долгом нажатии на изображение */
+  pointer-events: none;
+  /* Отключает события указателя на изображении */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  /* Запрещает выбор изображения */
 }
 .main_container p {
   width: 100vw;
