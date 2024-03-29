@@ -91,7 +91,6 @@
         </div>
     </div>
 
-
     <!-- Модальное окно для установки PWA -->
     <div id="pwaModal" class="modal">
         <div class="modal-content">
@@ -100,15 +99,47 @@
             <button id="installPWAButton">Добавить</button>
         </div>
     </div>
+
+    <!-- JavaScript код для установки PWA -->
     <script>
-        modal.querySelector('#installPWAButton').onclick = function () {
-            // Предложить пользователю добавить PWA на главный экран
-            // (Логика добавления PWA на главный экран)
-            modal.style.display = 'none';
+        let deferredPrompt;
+        let isEventHandled = false;
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            console.log('Показывается событие beforeinstallprompt');
+            e.preventDefault();
+            deferredPrompt = e;
+
+            if (!isEventHandled) {
+                showInstallButton();
+                isEventHandled = true;
+            }
+        });
+
+        function showInstallButton() {
+            const modal = document.getElementById('pwaModal');
+            modal.style.display = 'block';
+
+            modal.querySelector('#installPWAButton').onclick = function () {
+                if (deferredPrompt) {
+                    deferredPrompt.prompt();
+                    deferredPrompt.userChoice
+                        .then((choiceResult) => {
+                            if (choiceResult.outcome === 'accepted') {
+                                console.log('Пользователь согласился установить PWA');
+                            } else {
+                                console.log('Пользователь отклонил установку PWA');
+                            }
+                            deferredPrompt = null;
+                            modal.style.display = 'none';
+                        });
+                }
+            };
+        }
+
+        document.querySelector('.close').onclick = function () {
+            document.getElementById('pwaModal').style.display = 'none';
         };
-
-        localStorage.setItem('appInstalled', 'true');
-
     </script>
 </body>
 
