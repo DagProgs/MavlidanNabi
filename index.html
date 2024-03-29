@@ -92,41 +92,23 @@
     </div>
 
 
-    <!-- Модальное окно для установки приложения на Android -->
-    <div id="androidModal" class="modal">
+    <!-- Модальное окно для установки PWA -->
+    <div id="pwaModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Установите приложение на вашем устройстве (Android)</p>
-            <button id="installAndroidButton">Установить</button>
+            <p>Добавьте приложение на главный экран</p>
+            <button id="installPWAButton">Добавить</button>
         </div>
     </div>
-
-    <!-- Скрипт для отображения модального окна на устройствах Android -->
     <script>
-        // Функция для отображения модального окна на устройствах Android
-        function showAndroidModal() {
-            const isAndroid = /Android/i.test(navigator.userAgent);
-            const modal = document.getElementById('androidModal');
+        modal.querySelector('#installPWAButton').onclick = function () {
+            // Предложить пользователю добавить PWA на главный экран
+            // (Логика добавления PWA на главный экран)
+            modal.style.display = 'none';
+        };
 
-            if (isAndroid && !localStorage.getItem('appInstalled')) {
-                modal.style.display = 'block';
-            }
+        localStorage.setItem('appInstalled', 'true');
 
-            // Закрытие модального окна при нажатии на кнопку "Закрыть"
-            modal.querySelector('.close').onclick = function() {
-                modal.style.display = 'none';
-            };
-
-            // Добавление обработчика события для кнопки "Установить"
-            modal.querySelector('#installAndroidButton').onclick = function() {
-                // Добавьте здесь код для установки приложения на устройство Android
-                // Например, открытие страницы с инструкциями по установке
-            };
-
-            localStorage.setItem('appInstalled', 'true');
-        }
-
-        document.addEventListener("DOMContentLoaded", showAndroidModal);
     </script>
 </body>
 
