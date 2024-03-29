@@ -22,19 +22,99 @@ workbox.core.clientsClaim();
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "5e1d56008d1c98bfe900712092292a70"
+    "revision": "de88fc507b33fad929f3367872d55d52"
   },
   {
     "url": "main.js",
-    "revision": "2676aa2c3d7a9eb04f238bf700c3c7d3"
+    "revision": "53c96914aabc57a7c4d2ee4a132bb9bc"
   },
   {
     "url": "manifest.json",
     "revision": "d3ba7397319a097757495d6b11854caf"
   },
   {
-    "url": "assets/css/style.css",
-    "revision": "3f379d05025a9feb134ec7ed35a5f8ee"
+    "url": "css/style.css",
+    "revision": "885f979eff2c1a2a952fb19921d859f5"
+  },
+  {
+    "url": "img/1.webp",
+    "revision": "d45ed5b91c0b64e6205d812e31777f3a"
+  },
+  {
+    "url": "img/10.webp",
+    "revision": "eabd1c0944c5f8de45f48eb2d8aa63df"
+  },
+  {
+    "url": "img/11.webp",
+    "revision": "d0d26ebf6eb30f42e1f4db084d0b3e2d"
+  },
+  {
+    "url": "img/12.webp",
+    "revision": "ffa274720324cc1667d9e3e476c04ce2"
+  },
+  {
+    "url": "img/13.webp",
+    "revision": "810e59bdaa12fdd4c6b92a03d3b7bb9a"
+  },
+  {
+    "url": "img/14.webp",
+    "revision": "d391a2d4c07247ce120339e0ac1e21e3"
+  },
+  {
+    "url": "img/15.webp",
+    "revision": "c7dae8f9a59e9d280aa540109107c5f4"
+  },
+  {
+    "url": "img/16.webp",
+    "revision": "b44406f1c194c8d9e34320bf0e44b2ef"
+  },
+  {
+    "url": "img/2.webp",
+    "revision": "2c5315188a2d0d198891bc94d65a44cc"
+  },
+  {
+    "url": "img/3.webp",
+    "revision": "ba2b3267c885d7e6904241f10785a4eb"
+  },
+  {
+    "url": "img/4.webp",
+    "revision": "6d9ade5695d3a50e36a054ac69807b7a"
+  },
+  {
+    "url": "img/5.webp",
+    "revision": "22c8e073e91f5e84ce53efaaf762e332"
+  },
+  {
+    "url": "img/6.webp",
+    "revision": "df52cf5d00279b8b0e410b84acc410e0"
+  },
+  {
+    "url": "img/7.webp",
+    "revision": "0fe221fdc98af959be88bf13bbbd63d0"
+  },
+  {
+    "url": "img/8.webp",
+    "revision": "a684859bd7be1c014a3059a1db7d86a7"
+  },
+  {
+    "url": "img/9.webp",
+    "revision": "4964e4d1a0d2851dfd067d63bfdcc5d0"
+  },
+  {
+    "url": "img/DuaEnd.webp",
+    "revision": "4444d3e8f930bb1e2f0dff88702dfc27"
+  },
+  {
+    "url": "img/Quranayats.webp",
+    "revision": "4f2d7a4aca055fc7c42b7e771b046b28"
+  },
+  {
+    "url": "img/Salavat.webp",
+    "revision": "f797ed49bd225701fa146dfdf3447072"
+  },
+  {
+    "url": "img/mosque.avif",
+    "revision": "235d8aa6a3e923932bfa8d60ce45eb81"
   },
   {
     "url": "js/jquery-3.6.0.min.js",
@@ -79,90 +159,6 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "assets/icons/icon-96x96.png",
     "revision": "cce9088080585a31862e0fe7d70d306f"
-  },
-  {
-    "url": "assets/img/bg-1",
-    "revision": "c54ab9419e633332f73b2eb04648362e"
-  },
-  {
-    "url": "assets/img/bg-2",
-    "revision": "f0a344396802b51eac58df781f683a0a"
-  },
-  {
-    "url": "assets/pages/1",
-    "revision": "d45ed5b91c0b64e6205d812e31777f3a"
-  },
-  {
-    "url": "assets/pages/10",
-    "revision": "eabd1c0944c5f8de45f48eb2d8aa63df"
-  },
-  {
-    "url": "assets/pages/11",
-    "revision": "d0d26ebf6eb30f42e1f4db084d0b3e2d"
-  },
-  {
-    "url": "assets/pages/12",
-    "revision": "ffa274720324cc1667d9e3e476c04ce2"
-  },
-  {
-    "url": "assets/pages/13",
-    "revision": "810e59bdaa12fdd4c6b92a03d3b7bb9a"
-  },
-  {
-    "url": "assets/pages/14",
-    "revision": "d391a2d4c07247ce120339e0ac1e21e3"
-  },
-  {
-    "url": "assets/pages/15",
-    "revision": "c7dae8f9a59e9d280aa540109107c5f4"
-  },
-  {
-    "url": "assets/pages/16",
-    "revision": "b44406f1c194c8d9e34320bf0e44b2ef"
-  },
-  {
-    "url": "assets/pages/2",
-    "revision": "2c5315188a2d0d198891bc94d65a44cc"
-  },
-  {
-    "url": "assets/pages/3",
-    "revision": "ba2b3267c885d7e6904241f10785a4eb"
-  },
-  {
-    "url": "assets/pages/4",
-    "revision": "6d9ade5695d3a50e36a054ac69807b7a"
-  },
-  {
-    "url": "assets/pages/5",
-    "revision": "22c8e073e91f5e84ce53efaaf762e332"
-  },
-  {
-    "url": "assets/pages/6",
-    "revision": "df52cf5d00279b8b0e410b84acc410e0"
-  },
-  {
-    "url": "assets/pages/7",
-    "revision": "0fe221fdc98af959be88bf13bbbd63d0"
-  },
-  {
-    "url": "assets/pages/8",
-    "revision": "a684859bd7be1c014a3059a1db7d86a7"
-  },
-  {
-    "url": "assets/pages/9",
-    "revision": "4964e4d1a0d2851dfd067d63bfdcc5d0"
-  },
-  {
-    "url": "assets/pages/dua-end",
-    "revision": "4444d3e8f930bb1e2f0dff88702dfc27"
-  },
-  {
-    "url": "assets/pages/quran-ayats",
-    "revision": "44ffedf466d7f5796df50cf7ad6bcae2"
-  },
-  {
-    "url": "assets/pages/salavat",
-    "revision": "48eb9d47ee126ec9359e1d07fa766e93"
   }
 ]);
 
