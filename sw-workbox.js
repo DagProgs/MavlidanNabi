@@ -22,11 +22,11 @@ workbox.core.clientsClaim();
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "51f82793ec8a564913867d0f684cd096"
+    "revision": "3ba87ed5741561f826dab41b5d621509"
   },
   {
     "url": "manifest.json",
-    "revision": "6cf8d39bcb1261d45f1f4a26e75719b0"
+    "revision": "c84af84dbfca0eab6c011bd863060f6e"
   },
   {
     "url": "js/copy.js",
@@ -41,12 +41,12 @@ workbox.precaching.precacheAndRoute([
     "revision": "038770ef3eb91f3e8a50a3916cb7cf28"
   },
   {
-    "url": "main.js",
-    "revision": "2676aa2c3d7a9eb04f238bf700c3c7d3"
-  },
-  {
     "url": "css/style.css",
     "revision": "44fc634d8bb577df2b50f2f1655d4009"
+  },
+  {
+    "url": "main.js",
+    "revision": "755cf300bbc0abb0f7505885990dee69"
   },
   {
     "url": "img/1.webp",
@@ -180,20 +180,6 @@ workbox.routing.registerRoute(
     ]
   })
 );
-
-// API with network-first strategy
-workbox.routing.registerRoute(
-  /(http[s]?:\/\/)?([^\/\s]+\/)timeline/,
-  workbox.strategies.networkFirst()
-)
-
-// API with cache-first strategy
-workbox.routing.registerRoute(
-  /(http[s]?:\/\/)?([^\/\s]+\/)favorites/,
-  workbox.strategies.cacheFirst()
-)
-
-// OTHER EVENTS
 
 // Receive push and show a notification
 self.addEventListener('push', function(event) {
