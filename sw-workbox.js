@@ -22,7 +22,7 @@ workbox.core.clientsClaim();
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "3ba87ed5741561f826dab41b5d621509"
+    "revision": "381a284650d5639931ae19e7d0b2b776"
   },
   {
     "url": "manifest.json",
@@ -46,6 +46,18 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "main.js",
+    "revision": "80846bb3403b82a07c7f84658f186b23"
+  },
+  {
+    "url": "polyfills.js",
+    "revision": "56f34b0f4d3a42d45bfdb1782adaa173"
+  },
+  {
+    "url": "runtime.js",
+    "revision": "cd1ce3e306bf57f272364d1cc0249d6e"
+  },
+  {
+    "url": "smain.js",
     "revision": "755cf300bbc0abb0f7505885990dee69"
   },
   {
