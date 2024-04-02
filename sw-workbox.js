@@ -25,20 +25,32 @@ workbox.precaching.precacheAndRoute([
     "revision": "51f82793ec8a564913867d0f684cd096"
   },
   {
+    "url": "manifest.json",
+    "revision": "6cf8d39bcb1261d45f1f4a26e75719b0"
+  },
+  {
+    "url": "js/copy.js",
+    "revision": "7c29f02088c887de3f98f4ed08e42c43"
+  },
+  {
+    "url": "js/jquery-3.6.0.min.js",
+    "revision": "0732e3eabbf8aa7ce7f69eedbd07dfdd"
+  },
+  {
+    "url": "js/pwacompat.min.js",
+    "revision": "038770ef3eb91f3e8a50a3916cb7cf28"
+  },
+  {
     "url": "main.js",
     "revision": "2676aa2c3d7a9eb04f238bf700c3c7d3"
   },
   {
-    "url": "manifest.json",
-    "revision": "f5e75921ed97a65680c64d643c6a9e47"
-  },
-  {
     "url": "css/style.css",
-    "revision": "1e03ab6fcf1ab43141b1e5b0ffd0dba4"
+    "revision": "44fc634d8bb577df2b50f2f1655d4009"
   },
   {
     "url": "img/1.webp",
-    "revision": "d45ed5b91c0b64e6205d812e31777f3a"
+    "revision": "4433b980e10c1b841e463422c89da704"
   },
   {
     "url": "img/10.webp",
@@ -115,18 +127,6 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "img/mosque.avif",
     "revision": "235d8aa6a3e923932bfa8d60ce45eb81"
-  },
-  {
-    "url": "js/copy.js",
-    "revision": "7c29f02088c887de3f98f4ed08e42c43"
-  },
-  {
-    "url": "js/jquery-3.6.0.min.js",
-    "revision": "0732e3eabbf8aa7ce7f69eedbd07dfdd"
-  },
-  {
-    "url": "js/pwacompat.min.js",
-    "revision": "038770ef3eb91f3e8a50a3916cb7cf28"
   },
   {
     "url": "assets/icons/icon-128x128.png",
