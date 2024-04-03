@@ -22,11 +22,11 @@ workbox.core.clientsClaim();
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "25dba762bb60e91e5cd1013edcce67a4"
+    "revision": "98a466142149a9b34834fe0f89e41d78"
   },
   {
     "url": "manifest.json",
-    "revision": "c84af84dbfca0eab6c011bd863060f6e"
+    "revision": "25a62c0fa14259c46287448ba36bb36b"
   },
   {
     "url": "js/copy.js",
@@ -43,6 +43,18 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "css/style.css",
     "revision": "44fc634d8bb577df2b50f2f1655d4009"
+  },
+  {
+    "url": "main.js",
+    "revision": "80846bb3403b82a07c7f84658f186b23"
+  },
+  {
+    "url": "polyfills.js",
+    "revision": "56f34b0f4d3a42d45bfdb1782adaa173"
+  },
+  {
+    "url": "runtime.js",
+    "revision": "cd1ce3e306bf57f272364d1cc0249d6e"
   },
   {
     "url": "smain.js",
