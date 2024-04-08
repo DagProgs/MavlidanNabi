@@ -22,11 +22,15 @@ workbox.core.clientsClaim();
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "98a466142149a9b34834fe0f89e41d78"
+    "revision": "f9140829f846371d573aeaca64ee3a2f"
   },
   {
     "url": "manifest.json",
-    "revision": "25a62c0fa14259c46287448ba36bb36b"
+    "revision": "55dc63f201d09ac1d7df9e4d0f3257e5"
+  },
+  {
+    "url": "css/style.css",
+    "revision": "44fc634d8bb577df2b50f2f1655d4009"
   },
   {
     "url": "js/copy.js",
@@ -37,28 +41,8 @@ workbox.precaching.precacheAndRoute([
     "revision": "0732e3eabbf8aa7ce7f69eedbd07dfdd"
   },
   {
-    "url": "js/pwacompat.min.js",
-    "revision": "038770ef3eb91f3e8a50a3916cb7cf28"
-  },
-  {
-    "url": "css/style.css",
-    "revision": "44fc634d8bb577df2b50f2f1655d4009"
-  },
-  {
-    "url": "main.js",
-    "revision": "80846bb3403b82a07c7f84658f186b23"
-  },
-  {
-    "url": "polyfills.js",
-    "revision": "56f34b0f4d3a42d45bfdb1782adaa173"
-  },
-  {
-    "url": "runtime.js",
-    "revision": "cd1ce3e306bf57f272364d1cc0249d6e"
-  },
-  {
     "url": "smain.js",
-    "revision": "755cf300bbc0abb0f7505885990dee69"
+    "revision": "e332232f49094c4a5b4169a8ca73b7de"
   },
   {
     "url": "img/1.webp",
@@ -129,6 +113,10 @@ workbox.precaching.precacheAndRoute([
     "revision": "4444d3e8f930bb1e2f0dff88702dfc27"
   },
   {
+    "url": "img/mosque.avif",
+    "revision": "235d8aa6a3e923932bfa8d60ce45eb81"
+  },
+  {
     "url": "img/Quranayats.webp",
     "revision": "4f2d7a4aca055fc7c42b7e771b046b28"
   },
@@ -137,8 +125,8 @@ workbox.precaching.precacheAndRoute([
     "revision": "f797ed49bd225701fa146dfdf3447072"
   },
   {
-    "url": "img/mosque.avif",
-    "revision": "235d8aa6a3e923932bfa8d60ce45eb81"
+    "url": "img/screen.png",
+    "revision": "21909f0bd0f04a0c9873d2abe38a82db"
   },
   {
     "url": "assets/icons/icon-128x128.png",
@@ -192,6 +180,20 @@ workbox.routing.registerRoute(
     ]
   })
 );
+
+// API with network-first strategy
+workbox.routing.registerRoute(
+  /(http[s]?:\/\/)?([^\/\s]+\/)timeline/,
+  workbox.strategies.networkFirst()
+)
+
+// API with cache-first strategy
+workbox.routing.registerRoute(
+  /(http[s]?:\/\/)?([^\/\s]+\/)favorites/,
+  workbox.strategies.cacheFirst()
+)
+
+// OTHER EVENTS
 
 // Receive push and show a notification
 self.addEventListener('push', function(event) {
