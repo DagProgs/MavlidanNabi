@@ -22,7 +22,7 @@ workbox.core.clientsClaim();
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "5b2c25cb28e511bba339d9c13f1e5f39"
+    "revision": "f9140829f846371d573aeaca64ee3a2f"
   },
   {
     "url": "manifest.json",
@@ -30,7 +30,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "css/style.css",
-    "revision": "44fc634d8bb577df2b50f2f1655d4009"
+    "revision": "f9223eb922f0df529a4b8cda9257a4f3"
   },
   {
     "url": "js/copy.js",
@@ -113,8 +113,8 @@ workbox.precaching.precacheAndRoute([
     "revision": "4444d3e8f930bb1e2f0dff88702dfc27"
   },
   {
-    "url": "img/mosque.png",
-    "revision": "9818141af3fdf82fd795ee51091c3956"
+    "url": "img/mosque.avif",
+    "revision": "235d8aa6a3e923932bfa8d60ce45eb81"
   },
   {
     "url": "img/Quranayats.webp",
