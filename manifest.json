@@ -1,11 +1,11 @@
 {
-  "manifest_version": 6,
+  "manifest_version": 7,
   "lang": "ar",
   "dir": "ltr",
   "name": "Mavlid an-Nabi",
   "short_name": "Mavlid an-Nabi",
   "description": "Mavlid an-Nabi",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "categories": ["mavlid", "religion", "Mavlid an-Nabi"],
   "icons": [
     {
