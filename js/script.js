@@ -1,9 +1,9 @@
-// Сохраняем текущее положение скролла при закрытии PWA приложения
-window.addEventListener('beforeunload', function(event) {
-    localStorage.setItem('scrollPosition', window.scrollY.toString());
+// Сохраняем положение скролла в localStorage при закрытии приложения
+window.addEventListener('beforeunload', function() {
+    localStorage.setItem('scrollPosition', window.scrollY);
 });
 
-// Восстанавливаем положение скролла при открытии PWA приложения
+// Восстанавливаем положение скролла при открытии приложения
 window.addEventListener('load', function() {
     var scrollPosition = localStorage.getItem('scrollPosition');
     if (scrollPosition) {
