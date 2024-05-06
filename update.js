@@ -13,6 +13,24 @@ if ('serviceWorker' in navigator) {
 }
 
 
+
+
+// Сохраняем положение скролла в localStorage при изменении видимости страницы
+document.addEventListener("visibilitychange", function() {
+    if (document.visibilityState === 'hidden') {
+        localStorage.setItem('scrollPosition', window.scrollY);
+    }
+});
+
+// Восстанавливаем положение скролла при открытии приложения
+window.addEventListener('load', function() {
+    var scrollPosition = localStorage.getItem('scrollPosition');
+    if (scrollPosition) {
+        window.scrollTo(0, parseInt(scrollPosition));
+    }
+});
+
+
 // Сохраняем положение скролла в sessionStorage при скролле страницы
 window.addEventListener('scroll', function() {
     sessionStorage.setItem('scrollPosition', window.scrollY);

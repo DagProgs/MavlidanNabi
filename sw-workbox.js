@@ -58,7 +58,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "update.js",
-    "revision": "db558f69f576417deb4234487065f7c3"
+    "revision": "a5de11bbd0f45294fbf400c3d9796bdf"
   },
   {
     "url": "img/1.webp",
