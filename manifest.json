@@ -2,11 +2,11 @@
   "manifest_version": 10,
   "lang": "ar",
   "dir": "ltr",
-  "name": "Mavlid an-Nabi",
-  "short_name": "Mavlid an-Nabi",
-  "description": "Mavlid an-Nabi",
-  "version": "1.1.8",
-  "categories": ["mavlid", "religion", "Mavlid an-Nabi"],
+  "name": "Maulid an-Nabi",
+  "short_name": "Maulid an-Nabi",
+  "description": "Maulid an-Nabi",
+  "version": "1.1.9",
+  "categories": ["mavlid", "maulid", "religion", "Mavlid an-Nabi", "Maulid an-Nabi", "Мавлид ан-Наби"],
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
@@ -58,7 +58,7 @@
     }
   ],
   "scope": "https://dagprogs.github.io/MavlidanNabi/",
-  "id": "MavlidanNabi",
+  "id": "MaulidanNabi",
   "start_url": "https://dagprogs.github.io/MavlidanNabi/",
   "display": "standalone",
   "orientation": "portrait",

@@ -1,10 +1,10 @@
-importScripts('workbox-v4.3.1/workbox-sw.js');
+importScripts('./workbox-v4.3.1/workbox-sw.js');
 
 // SETTINGS
 
 // Path prefix to load modules locally
 workbox.setConfig({
-  modulePathPrefix: 'workbox-v4.3.1/'
+  modulePathPrefix: './workbox-v4.3.1/'
 });
 
 // Turn on logging
@@ -22,27 +22,27 @@ workbox.core.clientsClaim();
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "4b9480592d11d6a7e4b6099a3a5d4449"
-  },
-  {
-    "url": "manifest.json",
-    "revision": "dde37973149ef2e1c670438b9b9a7709"
+    "revision": "7c0e54d3f2b2464ffe487c09c0bb334c"
   },
   {
     "url": "css/style.css",
-    "revision": "a4ddce2cad1915c0b12ae9bb237b051e"
+    "revision": "fd35e7789bbc997ef1ab2801df916afc"
   },
   {
     "url": "js/copy.js",
     "revision": "7c29f02088c887de3f98f4ed08e42c43"
   },
   {
+    "url": "js/header-scroll.js",
+    "revision": "cb89b0c9a0f8128526610115dde4d146"
+  },
+  {
     "url": "js/jquery-3.6.0.min.js",
     "revision": "0732e3eabbf8aa7ce7f69eedbd07dfdd"
   },
   {
-    "url": "js/pwacompat.min.js",
-    "revision": "0bf1bea41b1ba758d3989814c988f46e"
+    "url": "js/script.js",
+    "revision": "3582eb206792da6e9097a7b5aa49c4e1"
   },
   {
     "url": "main.js",
@@ -54,7 +54,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "pwacompat.min.js",
-    "revision": "0bf1bea41b1ba758d3989814c988f46e"
+    "revision": "038770ef3eb91f3e8a50a3916cb7cf28"
   },
   {
     "url": "runtime.js",
@@ -133,10 +133,6 @@ workbox.precaching.precacheAndRoute([
     "revision": "4444d3e8f930bb1e2f0dff88702dfc27"
   },
   {
-    "url": "img/mosque.avif",
-    "revision": "235d8aa6a3e923932bfa8d60ce45eb81"
-  },
-  {
     "url": "img/Quranayats.webp",
     "revision": "4f2d7a4aca055fc7c42b7e771b046b28"
   },
@@ -145,8 +141,8 @@ workbox.precaching.precacheAndRoute([
     "revision": "f797ed49bd225701fa146dfdf3447072"
   },
   {
-    "url": "img/screen.png",
-    "revision": "21909f0bd0f04a0c9873d2abe38a82db"
+    "url": "img/mosque.avif",
+    "revision": "235d8aa6a3e923932bfa8d60ce45eb81"
   },
   {
     "url": "assets/icons/icon-128x128.png",
