@@ -22,7 +22,7 @@ workbox.core.clientsClaim();
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "e8c8d25b56d86dddd0a3728958550d27"
+    "revision": "a1211bf0a3c7d86e777ef64f1afd8f8a"
   },
   {
     "url": "manifest.json",
@@ -30,19 +30,19 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "css/style.css",
-    "revision": "fd35e7789bbc997ef1ab2801df916afc"
+    "revision": "a3755b6579ec158ebbcd408b51012e6e"
   },
   {
     "url": "js/copy.js",
     "revision": "7c29f02088c887de3f98f4ed08e42c43"
   },
   {
-    "url": "js/header-scroll.js",
-    "revision": "cb89b0c9a0f8128526610115dde4d146"
-  },
-  {
     "url": "js/jquery-3.6.0.min.js",
     "revision": "0732e3eabbf8aa7ce7f69eedbd07dfdd"
+  },
+  {
+    "url": "js/pwacompat.min.js",
+    "revision": "038770ef3eb91f3e8a50a3916cb7cf28"
   },
   {
     "url": "main.js",
@@ -62,7 +62,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "update.js",
-    "revision": "0524f5426529e47f9668c15e596c74dd"
+    "revision": "db409cd90d613a43e7a19c449e074441"
   },
   {
     "url": "img/1.webp",
