@@ -22,7 +22,11 @@ workbox.core.clientsClaim();
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "891ff000a50999f263771a22823262ad"
+    "revision": "e8c8d25b56d86dddd0a3728958550d27"
+  },
+  {
+    "url": "manifest.json",
+    "revision": "6af27222ec0ce745d89d07b320c9c4dc"
   },
   {
     "url": "css/style.css",
@@ -58,7 +62,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "update.js",
-    "revision": "a8cfd98c5e0861783d87149006f45001"
+    "revision": "0524f5426529e47f9668c15e596c74dd"
   },
   {
     "url": "img/1.webp",

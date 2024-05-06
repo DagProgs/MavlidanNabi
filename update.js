@@ -13,7 +13,7 @@ if ('serviceWorker' in navigator) {
 }
 
 
-/*
+// iPhone
 
 // Сохраняем положение скролла в localStorage при изменении видимости страницы
 document.addEventListener("visibilitychange", function() {
@@ -31,7 +31,7 @@ window.addEventListener('load', function() {
 });
 
 
-*/
+// Android
 
 // Сохраняем положение скролла в localStorage при закрытии приложения
 window.addEventListener('beforeunload', function() {
