@@ -1,122 +1,106 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #2fa578;
+html {
+  scroll-behavior: smooth;
 }
 
-.header {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  height: 200vh;
 }
-.header h1,
-.footer h1 {
-  position: absolute;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  padding: 50px 0;
+
+header {
+  position: relative;
+  height: 115px;
   z-index: 1;
-  font-size: 30px;
 }
 
 .header_container {
   position: fixed;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  background-color: #259e5b;
   width: 100vw;
-  height: 100vh;
-}
-.header_container img {
-  width: 320px;
-  height: 320px;
-  z-index: 2;
-}
-
-.main {
-  position: relative;
-}
-
-.main_container img {
-  width: 100vw;
-  height: auto;
-  -webkit-touch-callout: none;
-  /* Отключает вызов контекстного меню при долгом нажатии на изображение */
-  pointer-events: none;
-  /* Отключает события указателя на изображении */
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  /* Запрещает выбор изображения */
-}
-.main_container p {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
+  min-width: 320px;
+  height: 100px;
   color: #fff;
 }
-
-.footer {
-  position: relative;
-  height: 100vh;
-}
-
-
-.footer_container {
+.header_container h1 {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 50px;
+  font-size: 2em;
 }
-.footer_container img {
-  width: 320px;
-  height: 320px;
+.header_container button {
+  width: 100vw;
+  height: 60px;
+  color: #fff;
 }
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
+.header_container button svg {
+  width: 25px;
+  height: 25px;
 }
-
-.modal-content {
-  margin: 15% auto;
-  padding: 20px;
-  width: 80%;
-  max-width: 600px;
-  background-color: #fff;
-  position: relative;
+.header_container button path {
+  fill: #fff;
+}
+.header_container button p {
+  font-size: 0.8em;
 }
 
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.tab {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  background-color: #259e5b;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
   cursor: pointer;
 }
 
-.modal-content img {
-  width: 100%;
-  height: auto;
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  border-bottom: 3px solid #a9fcce;
+}
+
+main {
+  position: relative;
+}
+
+.main_container {
+  position: absolute;
+  width: 100vw;
+}
+
+.new_pages img,
+.archive_pages img {
+  width: 100vw;
+}
+
+.new_pages p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  color: #259e5b;
+}
+
+.line {
+  background-color: #e9e9e9;
+  width: 100vw;
+  height: 2px;
+}
+
+.new_mavlid {
+  width: 100vw;
 }/*# sourceMappingURL=style.css.map */

@@ -22,15 +22,19 @@ workbox.core.clientsClaim();
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "5b051b84fcce9c7f22fb2d8dfc3bb677"
+    "revision": "49eea206a6910aacabdacd2304be6b23"
   },
   {
     "url": "manifest.json",
-    "revision": "d90436153ea01d030f6cdb03e0e9fadb"
+    "revision": "2a19a8a605f357025bc64f992c41f8ab"
   },
   {
     "url": "css/style.css",
-    "revision": "a3755b6579ec158ebbcd408b51012e6e"
+    "revision": "72c0e59e4dbabff9bd04794396439bb8"
+  },
+  {
+    "url": "js/archive.js",
+    "revision": "5e87dc6983c618f575106363e569fc8a"
   },
   {
     "url": "js/copy.js",
@@ -41,8 +45,20 @@ workbox.precaching.precacheAndRoute([
     "revision": "0732e3eabbf8aa7ce7f69eedbd07dfdd"
   },
   {
-    "url": "js/pwacompat.min.js",
-    "revision": "038770ef3eb91f3e8a50a3916cb7cf28"
+    "url": "js/modernizr.min.js",
+    "revision": "65f1d21d5fcc9d21da758adababd0c3c"
+  },
+  {
+    "url": "js/new.js",
+    "revision": "e12f818a19bb5cac8daee04832edbe29"
+  },
+  {
+    "url": "js/prefixfree.min.js",
+    "revision": "99ea8d1961f9bb4e61f0512d1870aaf4"
+  },
+  {
+    "url": "js/tabs.js",
+    "revision": "bf908eb02d4b4236d9dfefee03df0be4"
   },
   {
     "url": "main.js",
@@ -65,84 +81,264 @@ workbox.precaching.precacheAndRoute([
     "revision": "db409cd90d613a43e7a19c449e074441"
   },
   {
-    "url": "img/1.webp",
-    "revision": "4433b980e10c1b841e463422c89da704"
+    "url": "img/archive.svg",
+    "revision": "542d9221afb53e8914e195d3eaacd6bf"
   },
   {
-    "url": "img/10.webp",
-    "revision": "eabd1c0944c5f8de45f48eb2d8aa63df"
+    "url": "img/archive/1.webp",
+    "revision": "c64b0b529e507d7ecd7d6e6eb65b13de"
   },
   {
-    "url": "img/11.webp",
-    "revision": "d0d26ebf6eb30f42e1f4db084d0b3e2d"
+    "url": "img/archive/10.webp",
+    "revision": "7a07cf7146ad1d8005327b78100d944a"
   },
   {
-    "url": "img/12.webp",
-    "revision": "ffa274720324cc1667d9e3e476c04ce2"
+    "url": "img/archive/11.webp",
+    "revision": "65b7dcd2d8fcee9a336e2073c8c0aa2b"
   },
   {
-    "url": "img/13.webp",
-    "revision": "810e59bdaa12fdd4c6b92a03d3b7bb9a"
+    "url": "img/archive/12.webp",
+    "revision": "d43c3bcc41237db090651bc893d724ce"
   },
   {
-    "url": "img/14.webp",
-    "revision": "d391a2d4c07247ce120339e0ac1e21e3"
+    "url": "img/archive/13.webp",
+    "revision": "d1c4b3a3279559133a99f0c413ddb223"
   },
   {
-    "url": "img/15.webp",
-    "revision": "c7dae8f9a59e9d280aa540109107c5f4"
+    "url": "img/archive/14.webp",
+    "revision": "9abadbbbd436019b8a36fbde352660f6"
   },
   {
-    "url": "img/16.webp",
-    "revision": "b44406f1c194c8d9e34320bf0e44b2ef"
+    "url": "img/archive/15.webp",
+    "revision": "51a65b99c83f7fd5d45aad1b68fde5de"
   },
   {
-    "url": "img/2.webp",
-    "revision": "2c5315188a2d0d198891bc94d65a44cc"
+    "url": "img/archive/16.webp",
+    "revision": "c294ba106a01945498dfe5fa7fb2e24b"
   },
   {
-    "url": "img/3.webp",
-    "revision": "ba2b3267c885d7e6904241f10785a4eb"
+    "url": "img/archive/17.webp",
+    "revision": "692951470fde91a8849fb7620ad85956"
   },
   {
-    "url": "img/4.webp",
-    "revision": "6d9ade5695d3a50e36a054ac69807b7a"
+    "url": "img/archive/18.webp",
+    "revision": "1b3c2d556e30c0392e18ac2bf495ac85"
   },
   {
-    "url": "img/5.webp",
-    "revision": "22c8e073e91f5e84ce53efaaf762e332"
+    "url": "img/archive/19.webp",
+    "revision": "1d1512068b581a11901e83e0513bd608"
   },
   {
-    "url": "img/6.webp",
-    "revision": "df52cf5d00279b8b0e410b84acc410e0"
+    "url": "img/archive/2.webp",
+    "revision": "e85b08358eed652368338431c85ff983"
   },
   {
-    "url": "img/7.webp",
-    "revision": "0fe221fdc98af959be88bf13bbbd63d0"
+    "url": "img/archive/20.webp",
+    "revision": "be5008df9ff0bed8ca55c246a91cc9a0"
   },
   {
-    "url": "img/8.webp",
-    "revision": "a684859bd7be1c014a3059a1db7d86a7"
+    "url": "img/archive/21.webp",
+    "revision": "f82b98f1079b7a9eeede5b61381a0b96"
   },
   {
-    "url": "img/9.webp",
-    "revision": "4964e4d1a0d2851dfd067d63bfdcc5d0"
+    "url": "img/archive/22.webp",
+    "revision": "269b2549f307ba38d1256de18143a581"
   },
   {
-    "url": "img/DuaEnd.webp",
-    "revision": "4444d3e8f930bb1e2f0dff88702dfc27"
+    "url": "img/archive/23.webp",
+    "revision": "769d9322de145bf96450bb8d01eb8c3b"
   },
   {
-    "url": "img/Quranayats.webp",
-    "revision": "4f2d7a4aca055fc7c42b7e771b046b28"
+    "url": "img/archive/24.webp",
+    "revision": "51f35d54a1c6b294e9c43bae9c120ff7"
   },
   {
-    "url": "img/Salavat.webp",
-    "revision": "f797ed49bd225701fa146dfdf3447072"
+    "url": "img/archive/25.webp",
+    "revision": "4c525b60f9c2a0c6faf466b7571fbfaa"
+  },
+  {
+    "url": "img/archive/26.webp",
+    "revision": "15c21de8b8b4ad30dae39a5f38ffc363"
+  },
+  {
+    "url": "img/archive/27.webp",
+    "revision": "7fd651998e031d18300e25f5e8b7b189"
+  },
+  {
+    "url": "img/archive/28.webp",
+    "revision": "56dd8b6abeb11120924e20e9c3f02e17"
+  },
+  {
+    "url": "img/archive/29.webp",
+    "revision": "c4bf935fd90dfa70b65f98570f0d7d05"
+  },
+  {
+    "url": "img/archive/3.webp",
+    "revision": "2d0c66e3480b4f45236b987b6c63f50f"
+  },
+  {
+    "url": "img/archive/30.webp",
+    "revision": "d0cf533fa4da2682edfc2c5820a779ad"
+  },
+  {
+    "url": "img/archive/31.webp",
+    "revision": "34bb5610804951218d70a1b0443facd9"
+  },
+  {
+    "url": "img/archive/32.webp",
+    "revision": "fd579e189b95ccd53ad97d1713d5f8ce"
+  },
+  {
+    "url": "img/archive/33.webp",
+    "revision": "44f7f5e575ac71e522cf332a9ee3a7c4"
+  },
+  {
+    "url": "img/archive/34.webp",
+    "revision": "511115da8e416150a5d4285f9c3db9a4"
+  },
+  {
+    "url": "img/archive/35.webp",
+    "revision": "a55fce6ccd57b6323e80580766b2035f"
+  },
+  {
+    "url": "img/archive/36.webp",
+    "revision": "1f9ee943a334343117c6618bdb472bd9"
+  },
+  {
+    "url": "img/archive/37.webp",
+    "revision": "02ed1f3f42de1d8315827f836d21ec14"
+  },
+  {
+    "url": "img/archive/38.webp",
+    "revision": "92f5e68feed9078595fd484ba1e1219d"
+  },
+  {
+    "url": "img/archive/39.webp",
+    "revision": "01e27e845bbd6eef0a93e6f3208563e3"
+  },
+  {
+    "url": "img/archive/4.webp",
+    "revision": "8f5ae646b4a20788ff6a30bdd90ca51d"
+  },
+  {
+    "url": "img/archive/40.webp",
+    "revision": "541e9743b1712299f71d22dc087cb57e"
+  },
+  {
+    "url": "img/archive/41.webp",
+    "revision": "31a8a2f49a1b183f1627b5ac91a98c8a"
+  },
+  {
+    "url": "img/archive/42.webp",
+    "revision": "7db21d678a452fdeac6c23819223dbc4"
+  },
+  {
+    "url": "img/archive/5.webp",
+    "revision": "61c5717eb44221d55827a6a61781992e"
+  },
+  {
+    "url": "img/archive/6.webp",
+    "revision": "e5ffdfe32759e17a7b1bdd80d062dcc0"
+  },
+  {
+    "url": "img/archive/7.webp",
+    "revision": "b2ae0ef52e7d686f113b4e83fef47c52"
+  },
+  {
+    "url": "img/archive/8.webp",
+    "revision": "cd4e0da1fcde3eedebbb45d5a6b19f1a"
+  },
+  {
+    "url": "img/archive/9.webp",
+    "revision": "bed34a7760b440a9522a0ebee2eeefc7"
+  },
+  {
+    "url": "img/full.svg",
+    "revision": "fca73657621d949f1301327c1d1c6053"
   },
   {
     "url": "img/mosque.avif",
     "revision": "235d8aa6a3e923932bfa8d60ce45eb81"
+  },
+  {
+    "url": "img/new/0.webp",
+    "revision": "4f2d7a4aca055fc7c42b7e771b046b28"
+  },
+  {
+    "url": "img/new/1.webp",
+    "revision": "4433b980e10c1b841e463422c89da704"
+  },
+  {
+    "url": "img/new/10.webp",
+    "revision": "eabd1c0944c5f8de45f48eb2d8aa63df"
+  },
+  {
+    "url": "img/new/11.webp",
+    "revision": "d0d26ebf6eb30f42e1f4db084d0b3e2d"
+  },
+  {
+    "url": "img/new/12.webp",
+    "revision": "ffa274720324cc1667d9e3e476c04ce2"
+  },
+  {
+    "url": "img/new/13.webp",
+    "revision": "810e59bdaa12fdd4c6b92a03d3b7bb9a"
+  },
+  {
+    "url": "img/new/14.webp",
+    "revision": "d391a2d4c07247ce120339e0ac1e21e3"
+  },
+  {
+    "url": "img/new/15.webp",
+    "revision": "c7dae8f9a59e9d280aa540109107c5f4"
+  },
+  {
+    "url": "img/new/16.webp",
+    "revision": "b44406f1c194c8d9e34320bf0e44b2ef"
+  },
+  {
+    "url": "img/new/17.webp",
+    "revision": "4444d3e8f930bb1e2f0dff88702dfc27"
+  },
+  {
+    "url": "img/new/2.webp",
+    "revision": "2c5315188a2d0d198891bc94d65a44cc"
+  },
+  {
+    "url": "img/new/3.webp",
+    "revision": "ba2b3267c885d7e6904241f10785a4eb"
+  },
+  {
+    "url": "img/new/4.webp",
+    "revision": "6d9ade5695d3a50e36a054ac69807b7a"
+  },
+  {
+    "url": "img/new/5.webp",
+    "revision": "22c8e073e91f5e84ce53efaaf762e332"
+  },
+  {
+    "url": "img/new/6.webp",
+    "revision": "df52cf5d00279b8b0e410b84acc410e0"
+  },
+  {
+    "url": "img/new/7.webp",
+    "revision": "0fe221fdc98af959be88bf13bbbd63d0"
+  },
+  {
+    "url": "img/new/8.webp",
+    "revision": "a684859bd7be1c014a3059a1db7d86a7"
+  },
+  {
+    "url": "img/new/9.webp",
+    "revision": "4964e4d1a0d2851dfd067d63bfdcc5d0"
+  },
+  {
+    "url": "img/new/Salavat.webp",
+    "revision": "f797ed49bd225701fa146dfdf3447072"
+  },
+  {
+    "url": "img/tabs.svg",
+    "revision": "f4046ee2cd8615e798038d662bdc9432"
   },
   {
     "url": "assets/icons/icon-128x128.png",
