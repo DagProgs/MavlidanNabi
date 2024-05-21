@@ -34,7 +34,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "css/style.css",
-    "revision": "75f51b11e7f8c0fa48757f9fb6c12758"
+    "revision": "9a788335d99a23527b07fcc18a7fb4c3"
   },
   {
     "url": "js/archive.js",
