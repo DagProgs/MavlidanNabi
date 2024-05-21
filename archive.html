@@ -35,49 +35,26 @@
         </header>
         <main>
             <div class="main_container">
-                <div class="new"></div>
+                <div class="archive"></div>
             </div>
         </main>
         <footer>
             <div class="footer_container">
-                <a href="index.html" class="active">
+                <a href="index.html">
                     <h2>Новая версия</h2>
                 </a>
-                <a href="archive.html">
+                <a href="archive.html" class="active">
                     <h2>Старая версия</h2>
                 </a>
             </div>
         </footer>
     </div>
 
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img src="screen.png" alt="">
-            <p>
-                Для лучшего опыта использования, установите приложение на вашем устройстве. Нажмите кнопку
-                "1-Поделиться" - "2-Добавить на главный экран" - "3-Добавить".
-            </p>
-        </div>
-    </div>
-    <script>
-        if (!localStorage.getItem('appInstalled') && !window.matchMedia('(display-mode: standalone)').matches && /iPhone|iPod/i.test(navigator.userAgent)) {
-            // Открываем модальное окно только на устройствах iPhone
-            document.getElementById('myModal').style.display = "block";
-            localStorage.setItem('appInstalled', 'true');
-        }
-
-        // Закрытие модального окна при нажатии на кнопку "Close"
-        document.getElementsByClassName("close")[0].onclick = function () {
-            document.getElementById('myModal').style.display = "none";
-        }
-    </script>
-
     <script type="text/javascript" src="runtime.js"></script>
     <script type="text/javascript" src="polyfills.js"></script>
     <script type="text/javascript" src="main.js"></script>
 
-    <script src="js/new.js"></script>
+    <script src="js/archive.js"></script>
 </body>
 
 </html>

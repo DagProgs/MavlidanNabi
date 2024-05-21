@@ -34,7 +34,6 @@ const coffees = [
     { name: "", image: "img/new/Salavat.webp" },
     { name: "17", image: "img/new/16.webp" },
     { name: "", image: "img/new/Salavat.webp" },
-    { name: "18", image: "img/new/17.webp" },
     { name: "", image: "img/mosque.avif" },
 ]
 

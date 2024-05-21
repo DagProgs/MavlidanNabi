@@ -22,43 +22,31 @@ workbox.core.clientsClaim();
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "49eea206a6910aacabdacd2304be6b23"
+    "revision": "3f6c84ea215dbe3674ed05818575176d"
+  },
+  {
+    "url": "archive.html",
+    "revision": "6242ed31596394facc58c1e7eec40533"
   },
   {
     "url": "manifest.json",
-    "revision": "9ce7456cc8dfdcd3c8fca1147d187f4c"
+    "revision": "7a2ff6d107d9bd98181cebe7aa3b6d0f"
   },
   {
     "url": "css/style.css",
-    "revision": "12a7054682e0f3edf5fba1046201a8d1"
+    "revision": "75f51b11e7f8c0fa48757f9fb6c12758"
   },
   {
     "url": "js/archive.js",
     "revision": "5e87dc6983c618f575106363e569fc8a"
   },
   {
-    "url": "js/copy.js",
-    "revision": "7c29f02088c887de3f98f4ed08e42c43"
-  },
-  {
     "url": "js/jquery-3.6.0.min.js",
     "revision": "0732e3eabbf8aa7ce7f69eedbd07dfdd"
   },
   {
-    "url": "js/modernizr.min.js",
-    "revision": "65f1d21d5fcc9d21da758adababd0c3c"
-  },
-  {
     "url": "js/new.js",
-    "revision": "e12f818a19bb5cac8daee04832edbe29"
-  },
-  {
-    "url": "js/prefixfree.min.js",
-    "revision": "99ea8d1961f9bb4e61f0512d1870aaf4"
-  },
-  {
-    "url": "js/tabs.js",
-    "revision": "bf908eb02d4b4236d9dfefee03df0be4"
+    "revision": "e6be301049dd0f1830a9fc7a007e955b"
   },
   {
     "url": "main.js",
