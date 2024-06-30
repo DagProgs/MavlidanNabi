@@ -22,35 +22,19 @@ workbox.core.clientsClaim();
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "47192ef68cfdfbd00aa248ed2e03f1a5"
+    "revision": "e6d02ed62d7203a3a794837e71c26ff5"
   },
   {
     "url": "archive.html",
-    "revision": "306551127bf2f51c6520cacde8a28b1e"
+    "revision": "867290382e23206a0ac53ceb5507823a"
   },
   {
-    "url": "manifest.json",
-    "revision": "7a2ff6d107d9bd98181cebe7aa3b6d0f"
+    "url": "new.html",
+    "revision": "7e7e92bf9d347e02a85cb94676ed590b"
   },
   {
     "url": "css/style.css",
-    "revision": "9a788335d99a23527b07fcc18a7fb4c3"
-  },
-  {
-    "url": "js/archive.js",
-    "revision": "5e87dc6983c618f575106363e569fc8a"
-  },
-  {
-    "url": "js/copy.js",
-    "revision": "7c29f02088c887de3f98f4ed08e42c43"
-  },
-  {
-    "url": "js/jquery-3.6.0.min.js",
-    "revision": "0732e3eabbf8aa7ce7f69eedbd07dfdd"
-  },
-  {
-    "url": "js/new.js",
-    "revision": "e6be301049dd0f1830a9fc7a007e955b"
+    "revision": "4dca94256f01cce77de51f1833c2b1c3"
   },
   {
     "url": "main.js",
@@ -71,10 +55,6 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "update.js",
     "revision": "db409cd90d613a43e7a19c449e074441"
-  },
-  {
-    "url": "img/archive.svg",
-    "revision": "542d9221afb53e8914e195d3eaacd6bf"
   },
   {
     "url": "img/archive/1.webp",
@@ -245,10 +225,6 @@ workbox.precaching.precacheAndRoute([
     "revision": "bed34a7760b440a9522a0ebee2eeefc7"
   },
   {
-    "url": "img/full.svg",
-    "revision": "fca73657621d949f1301327c1d1c6053"
-  },
-  {
     "url": "img/mosque.avif",
     "revision": "235d8aa6a3e923932bfa8d60ce45eb81"
   },
@@ -327,10 +303,6 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "img/new/Salavat.webp",
     "revision": "f797ed49bd225701fa146dfdf3447072"
-  },
-  {
-    "url": "img/tabs.svg",
-    "revision": "f4046ee2cd8615e798038d662bdc9432"
   },
   {
     "url": "assets/icons/icon-128x128.png",
