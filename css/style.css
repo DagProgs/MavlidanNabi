@@ -151,6 +151,7 @@ main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* modal iPhone */
 .modal {
   display: none;
   position: fixed;
@@ -189,4 +190,13 @@ main {
 .modal-content img {
   width: 100%;
   height: auto;
+}
+
+/* End Modal iPhone */
+
+.click {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
 }

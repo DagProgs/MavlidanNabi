@@ -22,7 +22,7 @@ workbox.core.clientsClaim();
 workbox.precaching.precacheAndRoute([
   {
     "url": "index.html",
-    "revision": "2445f9e9de3ebe665063a1558f4e9c12"
+    "revision": "1b17e900df7d848680db7651a54f924c"
   },
   {
     "url": "archive.html",
@@ -38,7 +38,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "css/style.css",
-    "revision": "4dca94256f01cce77de51f1833c2b1c3"
+    "revision": "38b9d1226a25bbe1e6c567a67b532572"
   },
   {
     "url": "main.js",
@@ -227,6 +227,10 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "img/archive/9.webp",
     "revision": "bed34a7760b440a9522a0ebee2eeefc7"
+  },
+  {
+    "url": "img/click.gif",
+    "revision": "c8ced8c3a1693ba1f601e335a7810b43"
   },
   {
     "url": "img/mosque.avif",
